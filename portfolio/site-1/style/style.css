@@ -1,0 +1,301 @@
+/*
+Theme:Site#1
+Version: 1.0
+Author: Degodyuk Aleksandr
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, body, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a {color: #fff;text-decoration: none;}
+a:hover {text-decoration: underline;}
+a img {outline: none; border: none;}
+input:focus {border: none; outline: none;}
+html {height: 100%;}
+body {
+    height: 100%;
+    min-width: 980px;
+    background: #F1F9FC url(../img/bg-main.png);
+    font: 100% Arial, sans-serif;
+    line-height: 1;
+}
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+@font-face {
+    font-family: Oswald;
+    src: url(../img/Oswald-Regular.ttf);
+}
+
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+/*--Header--*/
+header {
+    max-width: 1400px;
+    height: 310px;
+    margin: auto;
+    background: #2083DD url(../img/bg-header.jpg) no-repeat center center;
+    background-size: cover;
+}
+#logo {
+    padding: 49px 0px 35px 20px
+}
+#auth {
+    padding: 76px 16px 0px 0px;
+}
+#auth ul li {
+    float: left;
+}
+#auth ul li:nth-child(-n+2) {
+    border-right: 1px solid #fff;
+}
+#auth ul li a {
+    display: block;
+    font: 70% Arial, sans-serif;
+    font-stretch: condensed;
+    padding: 0 6px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+/*--Container--*/
+#container {
+    margin-top: -174px;
+}
+/*-Nav-*/
+nav {
+    background-color: rgba(255,255,255,.8);
+    width: 100%;
+    float: left;
+}
+nav ul li {
+    float: left;
+}
+nav ul li:last-child {
+    padding-left: 4px;
+}
+nav ul a {
+    display: block;
+    padding: 25px 50px 28px;
+    font: 96% Oswald, sans-serif;
+    color: #35393f;
+    text-transform: uppercase;
+}
+.nav-selected {
+    padding-left: 52px;
+    background-color: #49B0DD;
+    color: #fff;
+}
+/*Search*/
+#search {
+    margin: 23px 49px 0 0;
+}
+#search input[type="search"] {
+    width: 145px;
+    height: 27px;
+    border: none;
+    background: url(../img/bg-search.png) no-repeat;
+    padding: 5px;
+    float: left;
+    box-sizing: border-box;
+}
+#search input#search-button {
+    width: 34px;
+    height: 27px;
+}
+
+/*--Content--*/
+#content {
+    background: #fff;
+    box-shadow: 0 0 3px rgba(51,130,185,.4);
+    padding: 53px 20px 40px 20px;
+}
+#content h2 {
+    text-transform: uppercase;
+    font: 185% Oswald, sans-serif;
+    color: #666;
+    margin-bottom: 27px;
+}
+/*-News-*/
+.news-item {
+    width: 590px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 24px;
+    
+}
+.news-item p.date-create {
+    background: url(../img/calendar.png) no-repeat 3px;
+    padding-left: 22px;
+    font-size: 82%;
+    color: #989898;
+}
+p.date-create a {
+    color: #989898;
+}
+
+.news-item > img {
+    width: 510px;
+    height: 241px;
+    margin: 16px 0 12px 0;
+}
+.description {
+    font: bold 77% Arial;
+    font-stretch: condensed;
+    color: #666;
+    text-transform: uppercase;
+}
+.news-item .article {
+    margin: 20px 0 25px;
+    color: #989898;
+    line-height: 18px;
+    font-size: 81%;
+    letter-spacing: .09px;
+}
+a.more-btn {
+    display: inline-block;
+    padding: 11px 14px 10px;
+    font-size: 75%;
+    background: #49B0DD;
+    text-transform: uppercase;
+}
+#nav-pages {
+    margin: 31px 0;
+}
+#nav-pages a {
+    display: inline-block;
+    padding: 11px 14px;
+    font-size: 73%;
+    background: #49B0DD;
+    text-transform: uppercase;
+}
+a.more-btn:hover,
+#nav-pages a:hover {
+    background: #C5C6C6;
+    text-decoration: none;
+}
+#nav-pages ul li {
+    float: left;
+    margin-right: 10px;
+}
+#nav-pages a.number-pages {
+    padding: 11px 7px;
+}
+#nav-pages a.active-page {
+    background: #C5C6C6;
+}
+/*-Sidebar-*/
+#sidebar {
+    width: 300px;
+}
+/*Categories*/
+#categories {
+    margin-bottom: 52px;
+}
+#categories h2 {
+    margin-bottom: 23px;
+}
+#categories ul li,
+#archive ul li {
+    font-size: 73%;
+    line-height: 30px;
+}
+#categories ul li:before,
+#archive ul li:before {
+    content: '●';
+    color: #49b0dd;
+    padding-right: 9px;
+}
+#categories ul li a,
+#archive ul li a {
+    text-transform: uppercase;
+    color: #858585;
+}
+#categories ul li a:hover,
+#archive ul li a:hover {
+    color: #49b0dd;
+    text-decoration: none;
+}
+/*Recent-posts*/
+#recent-posts h2 {
+    margin-bottom: 31px;
+}
+.date-posts {
+    width: 45px;
+    text-align: center;
+}
+.date-posts span {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #49B0DD;
+    border-radius: 50%;
+    font: 197% Oswald;
+    letter-spacing: -2px;
+    color: #fff;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+.date-posts p {
+    font: bold 73% Arial;
+    text-transform: uppercase;
+}
+.post h4 {
+    font: bold 86% Arial;
+    text-transform: uppercase;
+    color: #666;
+}
+.post {
+    width: 240px;
+    height: 95px;
+    float: right;
+    font-size: 80%;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+.post p {
+    margin-top: 13px;
+}
+.post p a{
+    color: #49B0DD;
+}
+.post p a:hover {
+    text-decoration: none;
+}
+.recent-posts-item:last-child {
+    margin-bottom: 29px;
+}
+
+/*Archive*/
+#archive {
+    padding-right: 30px;
+}
+#archive h2 {
+    margin-bottom: 23px;
+}
+
+/*--Footer--*/
+footer {
+    height: 100px;
+}
+footer p {
+    margin: 37px 0 0 20px;
+    color: #838383;
+    font-size: 80%;
+    line-height: 18px;
+}
+footer a {
+    color: inherit;
+}

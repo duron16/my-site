@@ -1,0 +1,476 @@
+/*
+Version: 1.0;
+Author: Degodyuk Alexandr;
+Date: 2015-06-12;
+*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	list-style: none;
+}
+a, a img {
+	text-decoration: none;
+	color: #eee;
+    outline: none;
+    border: none;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font: 100% Arial, sans-serif;
+	background-color: #ccc;
+}
+.clear {clear: both;}
+.left {float: left;}
+.right {float: right;}
+
+@font-face {
+    font-family: Days Later;
+    src: url(../font/h2.otf);
+}
+#wrapper {
+	width: 100%;
+    height: 100%;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+    padding-bottom: 50px;
+}
+h1 {display: none;}
+h2 {
+    padding: 100px 0 60px 0;
+    text-align: center;
+    color: #222;
+    font: 300% "Days Later";
+    text-transform: uppercase;
+}
+
+/*Header*/
+header {
+	width: 100%;
+	min-width: 960px;
+	height: 100%;
+    position: relative;
+	padding-top: 20px;
+	color: #eee;
+	background: #888 url(../img/fon.jpg) no-repeat center top fixed;
+	background-size: cover;
+	text-align: center;
+    box-shadow: 0 2px 5px 5px rgba(0,0,0,.7);
+    z-index: 1;
+}
+#logo {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin: 10px 0 0 10px;
+	float: left;
+}
+header nav {
+	float: right;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+header nav li {
+	display: inline;
+	margin-right: 40px;
+}
+header nav li:last-child {
+	margin-right: 0;
+}
+header nav a {
+	font-size: 110%;
+}
+header nav a:hover {
+	border-bottom: 3px solid #c00;
+}
+header h2 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    font: 400% Arial; 
+    color: #eee;
+    font-weight: normal;
+}
+header h3 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+	font-size: 225%;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#header-top>a {
+	display: inline-block;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 235px;
+    line-height: 65px;
+	border-radius: 4px;
+	background-color: #b00;
+	font-size: 115%;
+	text-transform: uppercase;
+}
+#header-top>a:hover {
+	background-color: #800;
+}
+
+/*Content*/
+#content {
+    background-color: #bbb;
+    min-width: 960px;
+}
+.content-item {
+    width: 100%;
+    display: table;
+    height: 200px;
+    margin-top: 30px;
+}
+.content-image {
+    width: 320px;
+    height: 200px;
+}
+.content-image img {
+    border-radius: 5px;
+}
+.content-text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+}
+#content p {
+    font: 100% Verdana;
+    text-align: justify;
+    line-height: 22px;
+}
+
+/*Portfolio*/
+#portfolio {
+    background-color: #ddd;
+    min-width: 960px;
+}
+#portfolio p {
+    text-align: center;
+    font: bold 90% Tahoma;
+    text-transform: uppercase;
+    margin: -60px 0 50px;
+}
+.portfolio-item {
+    position: relative;
+    width: 31%;
+    margin: 1%;
+    float: left;
+    text-align: center;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+}
+.portfolio-item a img {
+    width: 100%;
+    height: auto;
+}
+.portfolio-item span {
+    position: absolute;
+    display: none;
+    top: 0;
+    padding: 20px 0;
+    left: 0;
+    right: 0;
+    line-height: 30px;
+    color: #fff;
+    background: rgba(0,0,0,.8);
+}
+.portfolio-item a:hover span {
+    display: block;
+    transition: all 1s linear;
+}
+.portfolio-item .download-psd {
+    background: #222;
+    margin-top: -4px;
+    border: 7px solid #eee;
+}
+.portfolio-item .download-psd a {
+    display: block;
+    color: #eee;
+    padding: 15px;
+    font: bold 90% "Georgia";
+}
+.download-psd a:hover {
+    text-decoration: underline;
+}
+
+/*Resume*/
+#resume {
+    min-width: 960px;
+}
+#resume nav {
+    margin-bottom: 10px;
+}
+#resume nav li {
+    display: inline;
+    border-right: 2px solid #222;
+    padding: 3px 15px;
+    margin-left: -3px;
+}
+#resume nav li:last-child {
+    border-right: none;
+}
+#resume nav a {
+    color: #222;
+    text-transform: lowercase;
+}
+#resume nav a:hover {
+    text-decoration: underline;
+}
+#resume-wrap {
+    background: #eee;
+    background-size: cover;
+    position: relative;
+}
+#photo {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 90px;
+    right: 70px;
+    cursor: pointer;
+}
+#photo:hover {
+    width: 320px;
+    height: 400px;
+    margin: -75px -60px;
+    border: 7px solid #222;
+    border-radius: 10px;
+}
+.resume-item {
+    width: 800px;
+    padding: 30px 25px;
+    margin: 0 auto;
+}
+#resume table {
+    border-spacing: 10px 10px;
+}
+#resume table td{
+    width: 200px;
+    vertical-align: top;
+}
+h4 {
+    font: bold 175% Arial;
+    padding: 30px;
+}
+h5 {
+    font: bold 125% Arial;
+    color: #061f47;
+    padding: 0 40px;
+}
+#resume hr {
+    border: 2px solid #072a62;
+    margin: 5px 0 20px 0;
+}
+#resume ul.minus li:before {
+    content: "– ";
+}
+
+.work-experience-item {
+    margin-bottom: 50px;
+}
+.work-experience-item:last-child {
+    margin-bottom: 0;
+}
+#work-experience ul li {
+    list-style-type: disc;
+    margin: 5px 40px;
+}
+#resume .office {
+    font-size: 107%;
+    font-weight: bold;
+}
+#resume .period {
+    font-size: 80%;
+    padding: 5px 0 10px 35px ;
+}
+#resume .company {
+    font-size: 105%;
+    margin-bottom: 20px;
+}
+#resume .education-item {
+    margin: 40px 0;
+}
+#resume .name-university {
+    font-weight: bold;
+    font-size: 115%;
+}
+#resume .year-graduated {
+    font-size: 80%;
+    color: #444;
+}
+#resume .specialty {
+    padding-top: 10px;
+}
+.personal-qualities li {
+    list-style: disc inside url(../img/check.png);
+}
+#resume ul, p {
+    padding: 0 25px;
+}
+
+/*Contact*/
+#contact {
+    min-width: 960px;
+    background: #0D0D0D url(../img/contact-bg.jpg) no-repeat top center;
+    box-shadow: 0 2px 5px 5px rgba(0,0,0,.7);
+    margin: 10px 0 0 0;
+    position: relative;
+}
+#contact h2 {
+    color: #eee;
+}
+#loadBar {
+    display: none;
+    width: 500px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+.contact-item {
+    width: 48%;
+}
+.screw {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 4px #555;
+}
+#screw-tl {top: 30px; left: 30px; transform: rotate(-20deg)}
+#screw-tr {top: 30px; right: 30px;transform: rotate(-50deg)}
+#screw-bl {bottom: 30px; left: 30px; transform: rotate(100deg)}
+#screw-br {bottom: 30px; right: 30px; transform: rotate(45deg)}
+
+.contact-item input,
+.contact-item textarea
+{
+    width: 90%;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border: none;
+    padding: 25px;
+    background: #eee;
+    color: #555;
+    font: 100% Arial, sans-serif;
+}
+.contact-item textarea {
+    height: 213px;
+    resize: none;
+}
+.button {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    line-height: 65px;
+	border-radius: 4px;
+	background: #ebb601;
+	font-size: 125%;
+    color: #eee;
+    text-shadow: 1px 1px 1px #000;
+    border: none;
+    cursor: pointer;
+	text-transform: uppercase;
+}
+.button:hover {
+    background: #dcab01;
+    color: #ddd;
+}
+/*footer*/
+footer {
+    width: 100%;
+    min-width: 960px;
+    height: 245px;
+    background: #7B9592 url(../img/footer-bg.jpg) repeat-x center bottom;
+}
+#wall {
+    display: inline-block;
+    width: 615px;
+    height: 245px;
+    background: url(../img/footer-left.png) no-repeat top left;
+    z-index: 1;
+    overflow: visible;
+}
+#logo-footer {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 70px 0 0 90px;
+}
+#social {
+    display: block;
+    width: 345px;
+    margin-top: 40px;
+}
+#social li {
+    display: inline-block;
+    padding-right: 30px;
+}
+#social span {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+    background: url(../img/social-sprite.jpg);
+    margin-right: 10px;
+    opacity: .4;
+    transition: all .7s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+span#vk {background-position: 0 0;}
+span#gmail {background-position: -70px 0;}
+span#skype {background-position: -140px 0;}
+#social p {
+	display: none;
+	position: absolute;
+    color: #000;
+    font: 125% Arial, sans-serif;
+    padding: 10px;
+    margin-left: -19px;
+    background: #fff;
+}
+
+#social span:hover {
+	opacity: 1;
+}
+#social div#skype-name:hover p {
+	opacity: 1;
+    display: block;
+}
+#copyright {
+    display: inline-block;
+    width: 280px;
+    padding: 10px;
+    font-size: 90%;
+    text-align: center;
+    margin-top: 80px;
+    border: 2px solid #fff;;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+}

@@ -1,0 +1,644 @@
+/*
+Theme:Site#2
+Version: 1.0
+Author: Degodyuk Aleksandr
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, body, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+html {height: 100%;font-size: 100%;}
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Euphemia;
+    src: url(../fonts/euphemia.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster.ttf);
+}
+@font-face {
+    font-family: OpenSans Semibold;
+    src: url(../fonts/opensans-semibold.ttf),
+         url(../fonts/opensans-semibold.eot),
+         url(../fonts/openSans-semibold.woff);
+}
+@font-face {
+    font-family: OpenSans ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf),
+         url(../fonts/opensans-extrabold.eot),
+         url(../fonts/opensans-extrabold.woff);
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a img {
+    outline: none;
+    border: none;
+}
+a:hover {
+    opacity: .7;
+}
+body {
+    height: 100%;
+    background: #fff;
+    font: 14px "Open Sans", sans-serif;
+    color: #4e525d;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 300%;
+    text-align: center;
+}
+/*--Header--*/
+header {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+#header-top {
+    height: 100px;
+}
+#logo a {
+    font: 307% Lobster;
+    color: #44c0c2;
+}
+#logo {
+    margin-top: 20px;
+}
+/*-Banner-*/
+#banner {
+    max-width: 1440px;
+    width: 100%;
+    padding: 135px 0 145px 0;
+    background: #A4D6C5 url(../img/bg-banner.jpg) center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+#banner h1 {
+    font: 450% "OpenSans Semibold";
+    margin-bottom: 1%;
+}
+#banner p {
+    font-size: 164%;
+    line-height: 37px;
+}
+#banner a {
+    display: inline-block;
+    font: 185% "OpenSans Semibold";
+    padding: 15px 35px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    margin-top: 55px;
+    margin-top: 4.6%;
+}
+#banner a:hover {
+    color: #222;
+    border: 3px solid #222;
+    opacity: 1;
+}
+
+/*--Nav--*/
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    font: 107% "Open Sans";
+    color: #484c55;
+    padding: 39px 25px 38px 25px;
+}
+nav ul li a:hover {
+    background: #F8F9FB;
+    border-bottom: 3px solid #49CBCD;
+    color: #49cbcd;
+}
+nav ul {
+    margin-right: -25px;
+}
+
+/*--Service--*/
+#service {
+    padding: 95px 0 88px;
+    overflow: hidden;
+}
+.service-item {
+    width: 23%;
+    text-align: center;
+    padding: 1%;
+    float: left;
+}
+.service-item span {
+    display: block;
+    width: 99px;
+    height: 99px;
+    padding: 1%;
+    border: 3px solid #49CBCD;
+    border-radius: 50%;
+    color: #49CBCD;
+    font-size: 285%;
+    line-height: 95px;
+    margin: 0 auto 40px auto;
+}
+.service-item h3 {
+    font-size: 157%;
+    margin-bottom: 20px;
+}
+.service-item p {
+    line-height: 26px;
+}
+.service-item .service-btn {
+    display: inline-block;
+    padding: 7px 10px;
+    color: #fff;
+    background: #49CBCD;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/*--Portfolio--*/
+#portfolio {
+    padding: 38px 0 100px 0;
+    background: #F1F1F1;
+    text-align: center;
+}
+#portfolio h2 {
+    margin-bottom: 3.5%;
+}
+#portfolio ul li {
+    float: left;
+    width: 31.3%;
+    margin: 1%;
+}
+#portfolio ul li img {
+    width: 100%;
+    height: auto;
+}
+#portfolio .portfolio-btn {
+    display: inline-block;
+    margin-top: 3.7%;
+    font-size: 172%;
+    padding: 20px 40px;
+    background: #49CBCD;
+    border-radius: 4px;
+}
+
+/*--Team--*/
+#team {
+    padding: 80px 0 90px;
+    text-align: center;
+}
+#team h2 {
+    margin-bottom: 9.5%;
+}
+.team-item {
+    display: inline-block;
+    width: 22%;
+    padding: 1.3%;
+}
+.team-item span {
+    display: block;
+    width: 201px;
+    height: 201px;
+    margin: 0 auto;
+    background: #EEEEF0;
+    border-radius: 50%;
+    margin-bottom: 65px;
+    font: 607%/195px "OpenSans ExtraBold";
+    color: #F46D6D;
+}
+.team-item .name {
+    font-size: 157%;
+}
+.team-item .office {
+    line-height: 24px;
+}
+.team-item .description {
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+/*--Buy--*/
+#buy {
+    padding: 120px 0 95px;
+    background: #F1F1F1;
+    text-align: center;
+}
+.buy-item {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    float: left;
+    margin-right: 2%;
+}
+.buy-item:nth-child(3) {
+    margin-right: 0;
+}
+.buy-item ul {
+    width: 100%;
+}
+.buy-item ul li {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
+    margin-bottom: 1px;
+    color: #8c9299;
+}
+.buy-item ul li:first-child {
+    height: 75px;
+    margin-bottom: 0;
+    background: #485460;
+    font-size: 185%;
+    color: #fff;
+    line-height: 75px;
+    border-radius: 3px 3px 0 0;
+}
+.buy-item ul li:nth-child(2) {
+    height: 65px;
+    line-height: 65px;
+    font-size: 142%;
+    color: #485460;
+    background: #F8F9FB;
+}
+.buy-item ul li:last-child {
+    height: 100px;
+    background: #F8F9FB;
+    line-height: 100px;
+    border-radius: 0 0 3px 3px;
+}
+.buy-item ul li a {
+    background: #788492;
+    border-radius: 4px;
+    padding: 10px 50px;
+}
+#buy .color ul li a {
+    background: #49CBCD;
+}
+#buy .color ul li:first-child {
+    background: #49CBCD;
+}
+
+/*--Reviews--*/
+#reviews {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 125px 0 95px;
+}
+.carousel-item {
+    width: 57%;
+    margin: auto;
+    text-align: center;
+}
+p.comment {
+    font-size: 136%;
+    margin: 25px 0 30px;
+    hyphens: auto;
+}
+p.author {
+    font-size: 150%;
+    color: #9a8faf;
+}
+.owl-prev,
+.owl-next {
+    height: 90%;
+    position: absolute;
+    top: 0;
+    font: 214% Euphemia;
+    color: #9a9a9a;
+}
+.owl-prev {
+    left: 0;
+    padding: 1.5% 10% 0 2%;
+}
+.owl-next {
+    right: 0;
+    padding: 1.5% 2% 0 10%;
+}
+
+/*--Footer--*/
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 90px 0 100px;
+    background: #111 url(../img/bg-footer.jpg) center center;
+    background-size: cover;
+}
+footer h2 {
+    color: #fff;
+    margin-bottom: 8.3%;
+}
+footer #contacts {
+    width: 39%;
+}
+#contacts h4 {
+    font-size: 171%;
+    color: #fff;
+    margin-bottom: 7px;
+}
+#contacts p {
+    color: #969696;
+    line-height: 21px;
+}
+#social {
+    margin: 35px 0 15px;
+}
+#social span {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 164%;
+    line-height: 42px;
+    text-align: center;
+    margin-right: 11px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+#social span:last-child {
+    margin-right: 0;
+}
+#social span:hover {
+    transform: rotate(360deg);
+}
+.icon-facebook {
+    background: #3B5997;
+}
+.icon-twitter {
+    background: #3EC2F3;
+}
+.icon-gplus {
+    background: #E44C41;
+}
+#contacts .phone-mail {
+    font: 100%/24px Arial;
+    color: #bface2;
+}
+/*-contacts-form-*/
+#contacts-form {
+    width: 50%;
+}
+form {
+    border: none;
+    border-radius: 5px;
+}
+form input {
+    width: 48%;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-size: 114%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+form textarea {
+    width: 100%;
+    height: 180px;
+    border: none;
+    font-size: 129%;
+    border-radius: 4px;
+    resize: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+form input[type="submit"] {
+    background: #49CBCD;
+    width: 30%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 157%;
+}
+form input[type="submit"]:hover {
+    background: #14a8aa;
+}
+
+@media only screen and (max-width: 1220px),
+only screen and (max-device-width: 1220px) {
+    nav ul {
+    margin-right: 0;
+    }
+    #logo {
+        margin-left: 1%;
+    }
+    #contacts-form {
+    padding-right: .5%;
+    }
+    footer #contacts {
+    padding-left: .5%;
+    }
+}
+@media only screen and (max-width: 940px),
+only screen and (max-device-width: 940px) {
+    .service-item {
+        width: 35%;
+        padding: 7.5%;
+    }
+    .team-item {
+        width: 45%;
+        padding: 1.3%;
+        margin-bottom: 1%;
+    }
+    .buy-item {
+        width: 45%;
+        margin: 2%;
+    }
+    .buy-item:nth-child(2) {
+        float: right;
+    }
+    .buy-item:nth-child(3) {
+        float: none;
+        margin: auto;
+    }
+    .owl-prev,
+    .owl-next {
+        padding-top: 4%;
+    }
+    footer {
+        padding: 40px 0 30px;
+    }
+}
+@media only screen and (max-width: 735px),
+only screen and (max-device-width: 735px) {
+    #header-top {
+        height: 60px;
+    }
+    #logo {
+        margin-top: 5px;
+    }
+    #banner {
+        padding: 55px 0 55px 0;
+    }
+    #banner h1 {
+    font-size: 45px;
+    }
+    nav ul li a {
+        font: 18px "Open Sans";
+        padding: 17px 10px 16px;
+    }
+    #service {
+        padding: 45px 0 40px;
+    }
+    #portfolio {
+        padding: 18px 0 40px 0;
+    }
+    #portfolio ul li {
+        width: 45%;
+        margin: 2.5%;
+    }
+    #team {
+        padding: 40px 0 45px;
+    }
+    #buy {
+        padding: 60px 0 45px;
+    }
+    #reviews {
+        padding: 55px 0 35px;
+    }
+    .carousel-item {
+    width: 70%;
+    }
+    .owl-prev,
+    .owl-next {
+        padding-top: 8%;
+    }
+    footer #contacts {
+        width: 95%;
+        padding: 2%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer #contacts-form {
+        width: 95%;
+        margin: 2%;
+    }
+    
+}
+@media only screen and (max-width: 600px),
+only screen and (max-device-width: 600px) {
+    body {
+        font-size: 150%;
+    }
+    #header-top {
+        height: 5%;
+        background: #484c55;
+    }
+    #logo a {
+        font: 55px Lobster;
+    }
+    #logo {
+        margin-top: 0;
+    }
+    nav {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        padding: 5px;
+        float: right;
+        background: url(../img/menu.png) no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav ul {
+        position: absolute;
+        top: 60px;
+        right: 70px;
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 10px 40px;
+        background: #333;
+        border-bottom: 1px solid #eee;
+    }
+    nav ul li:last-child {
+        border-bottom: 0;
+    }
+    nav ul li a {
+        color: #eee;
+        font-size: 150%;
+        padding: 8px 10px;
+    }
+    nav ul li a:hover {
+        background: none;
+        border-bottom: 0;
+    }
+    .buy-item {
+        width: 49%;
+        margin: 0 .5% 1%;
+    }
+    .owl-prev,
+    .owl-next {
+        padding-top: 25%;
+    }
+    form input {
+        width: 99.5%;
+        margin-bottom: 20px;
+    }
+    #social span {
+        width: 62px;
+        height: 62px;
+        line-height: 62px;
+    }
+    #contacts p {
+        font-size: 80%;
+    }
+    #contacts .phone-mail {
+        font-size: 80%;
+}
+}
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 110%;
+    }
+    .service-item {
+        width: 96%;
+        padding: 1%;
+        margin: 1%;
+    }
+    .team-item {
+        width: 95%;
+        padding: 1.3%;
+        margin-bottom: 1%;
+    }
+    .buy-item {
+        width: 98%;
+        margin: 1%;
+    }
+    form input[type="submit"] {
+    width: 50%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    nav ul li a {
+        color: #eee;
+        font-size: 120%;
+        padding: 8px 10px;
+    }
+}
