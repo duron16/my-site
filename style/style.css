@@ -1,5 +1,5 @@
 /*
-Version: 1.0;
+Version: 1.1;
 Author: Degodyuk Alexandr;
 Date: 2015-06-12;
 */
@@ -28,7 +28,7 @@ body {
 .right {float: right;}
 
 @font-face {
-    font-family: Days Later;
+    font-family: "Days Later";
     src: url(../font/h2.otf);
 }
 #wrapper {
@@ -36,24 +36,23 @@ body {
     height: 100%;
 }
 .container {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
     padding-bottom: 50px;
 }
-h1 {display: none;}
 h2 {
-    padding: 100px 0 60px 0;
+    padding: 100px 0 60px;
     text-align: center;
     color: #222;
     font: 300% "Days Later";
     text-transform: uppercase;
 }
-
 /*Header*/
 header {
 	width: 100%;
-	min-width: 960px;
+/*	min-width: 960px;*/
 	height: 100%;
+	min-height: 350px;
     position: relative;
 	padding-top: 20px;
 	color: #eee;
@@ -70,22 +69,26 @@ header {
 	margin: 10px 0 0 10px;
 	float: left;
 }
-header nav {
+header ul.nav {
 	float: right;
 	text-transform: uppercase;
 	margin-top: 40px;
 }
-header nav li {
-	display: inline;
-	margin-right: 40px;
+header .nav li {
+	float: left;
 }
-header nav li:last-child {
-	margin-right: 0;
+header .nav li + li {
+    margin-left: 40px;
 }
-header nav a {
+header .nav a {
 	font-size: 110%;
+    transition: border .1s linear;
+    -webkit-transition: border .1s linear;
+    -moz-transition: border .1s linear;
+    -ms-transition: border .1s linear;
+    -o-transition: border .1s linear;
 }
-header nav a:hover {
+header .nav a:hover {
 	border-bottom: 3px solid #c00;
 }
 header h2 {
@@ -121,6 +124,11 @@ header h3 {
 	background-color: #b00;
 	font-size: 115%;
 	text-transform: uppercase;
+    transition: background .1s linear;
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -ms-transition: background .1s linear;
+    -o-transition: background .1s linear;
 }
 #header-top>a:hover {
 	background-color: #800;
@@ -129,7 +137,7 @@ header h3 {
 /*Content*/
 #content {
     background-color: #bbb;
-    min-width: 960px;
+/*    min-width: 960px;*/
 }
 .content-item {
     width: 100%;
@@ -158,7 +166,7 @@ header h3 {
 /*Portfolio*/
 #portfolio {
     background-color: #ddd;
-    min-width: 960px;
+/*    min-width: 960px;*/
 }
 #portfolio p {
     text-align: center;
@@ -214,7 +222,7 @@ header h3 {
 
 /*Resume*/
 #resume {
-    min-width: 960px;
+/*    min-width: 960px;*/
 }
 #resume nav {
     margin-bottom: 10px;
@@ -256,7 +264,8 @@ header h3 {
     border-radius: 10px;
 }
 .resume-item {
-    width: 800px;
+/*    width: 800px;*/
+    width: 83%;
     padding: 30px 25px;
     margin: 0 auto;
 }
@@ -283,7 +292,6 @@ h5 {
 #resume ul.minus li:before {
     content: "– ";
 }
-
 .work-experience-item {
     margin-bottom: 50px;
 }
@@ -329,7 +337,7 @@ h5 {
 
 /*Contact*/
 #contact {
-    min-width: 960px;
+/*    min-width: 960px;*/
     background: #0D0D0D url(../img/contact-bg.jpg) no-repeat top center;
     box-shadow: 0 2px 5px 5px rgba(0,0,0,.7);
     margin: 10px 0 0 0;
@@ -372,10 +380,19 @@ h5 {
     margin-bottom: 30px;
     border-radius: 4px;
     border: none;
-    padding: 25px;
+    padding: 25px 5%;
     background: #eee;
     color: #555;
     font: 100% Arial, sans-serif;
+    transition: box-shadow .1s linear;
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    -ms-transition: box-shadow .1s linear;
+    -o-transition: box-shadow .1s linear;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+    box-shadow: 0 0 5px 3px #EBB601;
 }
 .contact-item textarea {
     height: 213px;
@@ -394,6 +411,11 @@ h5 {
     border: none;
     cursor: pointer;
 	text-transform: uppercase;
+    transition: background .1s linear;
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -ms-transition: background .1s linear;
+    -o-transition: background .1s linear;
 }
 .button:hover {
     background: #dcab01;
@@ -402,40 +424,61 @@ h5 {
 /*footer*/
 footer {
     width: 100%;
-    min-width: 960px;
-    height: 245px;
-    background: #7B9592 url(../img/footer-bg.jpg) repeat-x center bottom;
+/*    min-width: 960px;*/
+    background: #3d3d3d;
 }
-#wall {
-    display: inline-block;
-    width: 615px;
-    height: 245px;
-    background: url(../img/footer-left.png) no-repeat top left;
-    z-index: 1;
-    overflow: visible;
+footer .container {
+    padding: 30px 0;
+}
+footer .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+footer .nav {
+    width: 50%;
+    margin-right: -25px;
+    padding: 0 10%;
+    float: left;
+    box-sizing: border-box;
+}
+footer .nav li {
+    padding: 3px 0;
+}
+footer .nav a {
+    color: #ccc;
+}
+footer .nav a:hover {
+    text-decoration: underline;
 }
 #logo-footer {
-    display: block;
-    width: 110px;
-    height: 110px;
-    margin: 70px 0 0 90px;
+    float: left;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
 }
-#social {
-    display: block;
-    width: 345px;
-    margin-top: 40px;
+#logo-footer img {
+    max-width: 100%;
+    height: auto;
 }
-#social li {
+.social {
+    width: 50%;
+    float: right;
+    margin-left: -25px;
+    padding: 0 10%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.social li {
     display: inline-block;
-    padding-right: 30px;
 }
-#social span {
+.social span {
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	width: 45px;
+	height: 45px;
     background: url(../img/social-sprite.jpg);
     margin-right: 10px;
-    opacity: .4;
+    opacity: .5;
     transition: all .7s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -443,34 +486,37 @@ footer {
     -o-transition: all .3s linear;
 }
 span#vk {background-position: 0 0;}
-span#gmail {background-position: -70px 0;}
-span#skype {background-position: -140px 0;}
-#social p {
+span#gmail {background-position: -45px 0;}
+span#skype {background-position: -90px 0;}
+.social p {
 	display: none;
 	position: absolute;
     color: #000;
     font: 125% Arial, sans-serif;
-    padding: 10px;
-    margin-left: -19px;
+    padding: 5px 10px;
+    margin-left: -29px;
     background: #fff;
 }
-
-#social span:hover {
+.social span:hover {
 	opacity: 1;
 }
-#social div#skype-name:hover p {
+.social div#skype-name:hover p {
 	opacity: 1;
     display: block;
 }
-#copyright {
-    display: inline-block;
-    width: 280px;
-    padding: 10px;
-    font-size: 90%;
-    text-align: center;
-    margin-top: 80px;
-    border: 2px solid #fff;;
-    border-radius: 30px;
+.copyright {
+    padding: 15px 0;
+    font-size: 100%;
     background: #000;
-    color: #fff;
+    text-align: center;
+    color: #ccc;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        padding: 0 1% 50px;
+    }
+}
+@media only screen and (max-width: 730px) {
+
 }
