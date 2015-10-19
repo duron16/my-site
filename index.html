@@ -10,10 +10,11 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/js-form.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script src="js/js-form.js"></script>
 </head>
 <body>
+
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function (d, w, c) {
@@ -62,10 +63,8 @@
 						<li><a href="#resume">Резюме</a></li>
 						<li><a href="#contact">Написать мне</a></li>
 					</ul>
-					<div class="clear"></div>
-					<h2>Жизнь в двух мирах</h2>
-					<h3>уже реальность</h3>
-					<a href="#content">Подробнее</a>
+					<h2>Цифровой мир<span>призван делать жизнь легче</span></h2>
+					<a id="btn-more" href="#content">Подробнее</a>
 			</div>
 		</div>
 	</header>    
@@ -74,13 +73,12 @@
     	<div class="container">
     	<h2>Начало...</h2>
             <div class="content-item">
-    		    <div class="img-wrap left">
+    		    <div class="img-wrap">
     		        <img src="img/item-1.jpg" alt="Код">
     		    </div>
     		    <div class="content-text">
                     <p>...Цифровой мир стал неотъемлемой частью современного мира. Уже трудно представить жизнь без информационных технологий. Технологий, которые помогают делать нашу жизнь легче, комфортнее и комуникабельнее. Помогают в личных отношениях, в бизнесе, помогают учиться и развиваться, помогают за считаные минуты найти нужную информацию, переслать копии документов или важные сообщения... так можно продолжать долго, но раз Вы здесь, значит у Вас есть свои причины погрузиться в этот мир.</p>
     		    </div>
-    		    <div class="clear"></div>
             </div>
             <div class="content-item">
                 <div class="content-text">
@@ -123,16 +121,14 @@
     <div id="resume">
         <div class="container">
             <h2>Резюме</h2>
-            <nav class="right">
-                <ul>
-                    <li><a href="#work-experience">Опыт работы</a></li>
-                    <li><a href="#education">Образование</a></li>
-                    <li><a href="#personal-qualities">Личные качества</a></li>
-                    <li><a href="#additional-information">Доп. информация</a></li>
-                </ul>
-            </nav>
+            <ul class="resume-nav">
+                <li><a href="#work-experience">Опыт работы</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#personal-qualities">Личные качества</a></li>
+                <li><a href="#additional-information">Доп. информация</a></li>
+            </ul>
             <div class="clear"></div>
-            <div id="resume-wrap">
+            <div class="resume-wrap">
                 <div class="resume-item">
                     <h4>Дегодюк Александр Николаевич</h4>
                     <div class="photo">
@@ -260,24 +256,22 @@
     </div>
     
     <div id="contact">
-       <div id="screw-tl" class="screw"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
-       <div id="screw-tr" class="screw"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
-       <div id="screw-bl" class="screw"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
-       <div id="screw-br" class="screw"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
+       <div class="screw screw-tl"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
+       <div class="screw screw-tr"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
+       <div class="screw screw-bl"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
+       <div class="screw screw-br"><img src="img/screw.png" alt="&nbsp;" width="45" height="45"></div>
         <div class="container">
             <h2>Написать мне</h2>
             <div id="loadBar"></div>
-                     
-            <form action="#" method="post" name="form1">
-                <div class="contact-item left">
+            <form method="post" name="form1">
+                <div class="contact-left">
                     <input type="text" name="name" id="name" value="" placeholder="ИМЯ *" maxlength="40" required>
                     <input type="email" name="email" id="email" value="" placeholder="E-MAIL *" maxlength="60" required>
                     <input type="text" name="subject" id="subject" value="" placeholder="ТЕМА" maxlength="60">
                 </div>
-                <div class="contact-item right">
+                <div class="contact-right">
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Введите текст сообщения *" required></textarea>
                 </div>
-                <div class="clear"></div>
                 <input type="submit" name="send" id="send" value="отправить" class="button">
                 
                     <!--[if IE 9]>

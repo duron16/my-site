@@ -1,7 +1,8 @@
 /*
-Version: 1.1;
+Version: 1.2;
 Author: Degodyuk Alexandr;
 Date: 2015-06-12;
+Update: 2015-10-19;
 */
 * {
 	margin: 0;
@@ -39,6 +40,11 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
     padding-bottom: 50px;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 h2 {
     padding: 100px 0 60px;
@@ -98,21 +104,18 @@ header h2 {
     right: 0;
     margin: auto;
     padding: 0;
-    font: 400% Arial; 
+    font: 420% Arial;
     color: #eee;
     font-weight: normal;
 }
-header h3 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-	font-size: 225%;
+header h2 span {
+    display: block;
+	font-size: 65%;
+    margin-top: 4%;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 #header-top>a {
-	display: inline-block;
     position: absolute;
     bottom: 20%;
     left: 0;
@@ -142,23 +145,23 @@ header h3 {
 .content-item {
     width: 100%;
     display: table;
-    height: 200px;
+    min-height: 200px;
     margin-top: 30px;
+    vertical-align: middle;
 }
 .img-wrap {
-    width: 320px;
-    width: 100%;
-    height: auto;
     max-height: 200px;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
 }
 .img-wrap img {
-    max-width: 100%;
     border-radius: 5px;
 }
 .content-text {
+    width: 60%;
     display: table-cell;
     vertical-align: middle;
-    width: 60%;
 }
 #content p {
     font: 100% Verdana;
@@ -183,11 +186,14 @@ header h3 {
     margin: 1%;
     float: left;
     text-align: center;
-    transition: all .8s;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -ms-transition: all .8s;
-    -o-transition: all .8s;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -ms-transition: all .1s;
+    -o-transition: all .1s;
+}
+.portfolio-item:hover {
+    box-shadow: 0 0 20px 3px #555;
 }
 .portfolio-item a img {
     width: 100%;
@@ -206,7 +212,6 @@ header h3 {
 }
 .portfolio-item a:hover span {
     display: block;
-    transition: all 1s linear;
 }
 .portfolio-item .download-psd {
     background: #222;
@@ -227,36 +232,34 @@ header h3 {
 #resume {
 /*    min-width: 960px;*/
 }
-#resume nav {
+.resume-nav {
     margin-bottom: 10px;
+    float: right;
 }
-#resume nav li {
+.resume-nav li {
     display: inline;
-    border-right: 2px solid #222;
     padding: 3px 15px;
     margin-left: -3px;
 }
-#resume nav li:last-child {
-    border-right: none;
+.resume-nav li + li {
+    border-left: 2px solid #222;
 }
-#resume nav a {
+.resume-nav a {
     color: #222;
     text-transform: lowercase;
 }
-#resume nav a:hover {
+.resume-nav a:hover {
     text-decoration: underline;
 }
-#resume-wrap {
+.resume-wrap {
     background: #eee;
-    background-size: cover;
     position: relative;
 }
-#photo {
-    position: absolute;
+.photo {
     width: 200px;
     height: 250px;
-    top: 90px;
-    right: 70px;
+    float: right;
+    margin-top: -80px;
     cursor: pointer;
     transition: transform .2s linear .1s, border .3s linear;
     -webkit-transition: transform .2s linear .1s, border .3s linear;
@@ -266,19 +269,13 @@ header h3 {
     border: 7px solid transparent;
     border-radius: 10px;
 }
-#photo:hover {
+.photo:hover {
     transform: scale(1.6);
     border: 7px solid #222;
-/*
-    width: 320px;
-    height: 400px;
-    margin: -75px -60px;
-*/
 }
 .resume-item {
 /*    width: 800px;*/
-    width: 83%;
-    padding: 30px 25px;
+    padding: 30px 2.5%;
     margin: 0 auto;
 }
 #resume table {
@@ -370,7 +367,12 @@ h5 {
     margin: auto;
     text-align: center;
 }
-.contact-item {
+.contact-left {
+    width: 48%;
+    float: left;
+}
+.contact-right {
+    float: right;
     width: 48%;
 }
 .screw {
@@ -380,14 +382,13 @@ h5 {
     border-radius: 50%;
     box-shadow: 0 0 5px 4px #555;
 }
-#screw-tl {top: 30px; left: 30px; transform: rotate(-20deg)}
-#screw-tr {top: 30px; right: 30px;transform: rotate(-50deg)}
-#screw-bl {bottom: 30px; left: 30px; transform: rotate(100deg)}
-#screw-br {bottom: 30px; right: 30px; transform: rotate(45deg)}
+.screw-tl {top: 30px; left: 30px; transform: rotate(-20deg)}
+.screw-tr {top: 30px; right: 30px;transform: rotate(-50deg)}
+.screw-bl {bottom: 30px; left: 30px; transform: rotate(100deg)}
+.screw-br {bottom: 30px; right: 30px; transform: rotate(45deg)}
 
-.contact-item input,
-.contact-item textarea
-{
+#contact input,
+#contact textarea {
     width: 90%;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -402,19 +403,21 @@ h5 {
     -ms-transition: box-shadow .1s linear;
     -o-transition: box-shadow .1s linear;
 }
-.contact-item input:focus,
-.contact-item textarea:focus {
+#contact input:focus,
+#contact textarea:focus {
     box-shadow: 0 0 5px 3px #EBB601;
 }
-.contact-item textarea {
-    height: 213px;
+#contact textarea {
+    height: 214px;
     resize: none;
 }
-.button {
+#contact input.button {
     display: block;
+    clear: both;
     width: 230px;
+    height: 60px;
     margin: 0 auto;
-    line-height: 65px;
+    padding: 0;
 	border-radius: 4px;
 	background: #ebb601;
 	font-size: 125%;
@@ -429,8 +432,8 @@ h5 {
     -ms-transition: background .1s linear;
     -o-transition: background .1s linear;
 }
-.button:hover {
-    background: #dcab01;
+#contact input.button:hover {
+    background: #d8a801;
     color: #ddd;
 }
 /*footer*/
