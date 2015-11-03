@@ -140,42 +140,49 @@ header h2 span {
 /*Content*/
 #content {
     background-color: #bbb;
+    font: 100% Verdana;
+    text-align: justify;
+    line-height: 1.2;
 /*    min-width: 960px;*/
 }
 .content-item {
-    width: 100%;
-    display: table;
-    min-height: 200px;
     margin-top: 30px;
     vertical-align: middle;
+    outline: 1px solid red;
+}
+.content-item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.content-item:nth-of-type(2n) .img-wrap {
+    float: right;
 }
 .img-wrap {
-    max-height: 200px;
+    width: 40%;
     overflow: hidden;
-    display: table-cell;
+    float: left;
     vertical-align: middle;
 }
 .img-wrap img {
     border-radius: 5px;
+    width: 100%;
 }
 .content-text {
-    width: 60%;
+    width: 59%;
+    outline: 1px solid red;
+    box-sizing: border-box;
+    display: inline-block;
     display: table-cell;
     vertical-align: middle;
 }
-#content p {
-    font: 100% Verdana;
-    text-align: justify;
-    line-height: 22px;
-}
-
-/*Portfolio*/
+/*--Portfolio--*/
 #portfolio {
     background-color: #ddd;
 /*    min-width: 960px;*/
+    text-align: center;
 }
 #portfolio p {
-    text-align: center;
     font: bold 90% Tahoma;
     text-transform: uppercase;
     margin: -60px 0 50px;
@@ -183,16 +190,21 @@ header h2 span {
 .portfolio-item {
     position: relative;
     width: 31%;
-    margin: 1%;
-    float: left;
-    text-align: center;
+    margin: 15px 1%;
+    display: inline-block;
+}
+.portfolio-item > a {
+    display: block;
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 15px;
     transition: all .1s;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
     -ms-transition: all .1s;
     -o-transition: all .1s;
 }
-.portfolio-item:hover {
+.portfolio-item > a:hover {
     box-shadow: 0 0 20px 3px #555;
 }
 .portfolio-item a img {
@@ -202,10 +214,8 @@ header h2 span {
 .portfolio-item span {
     position: absolute;
     display: none;
-    top: 0;
+    top: 0; left: 0; right: 0;
     padding: 20px 0;
-    left: 0;
-    right: 0;
     line-height: 30px;
     color: #fff;
     background: rgba(0,0,0,.8);
@@ -213,19 +223,21 @@ header h2 span {
 .portfolio-item a:hover span {
     display: block;
 }
-.portfolio-item .download-psd {
-    background: #222;
-    margin-top: -4px;
-    border: 7px solid #eee;
-}
-.portfolio-item .download-psd a {
+.download-psd a {
+    width: 85%;
+    margin: auto;
     display: block;
     color: #eee;
+    position: relative;
+    z-index: 100;
     padding: 15px;
     font: bold 90% "Georgia";
+    background: #222;
+    transition: all .1s linear;
+    border-radius: 6px;
 }
 .download-psd a:hover {
-    text-decoration: underline;
+    box-shadow: 0 0 0 2px #ccc, 0 0 0 4px #222;
 }
 
 /*Resume*/
@@ -342,6 +354,7 @@ h5 {
 }
 #resume ul, p {
     padding: 0 25px;
+    outline: 1px solid red;
 }
 
 /*Contact*/
@@ -580,5 +593,34 @@ span#skype {background-position: -90px 0;}
     }
 }
 @media only screen and (max-width: 730px) {
-
+    .nav {
+        margin: 10px!important;
+    }
+    .nav li {
+        float: none !important;
+        text-align: left;
+        margin: 0 !important;
+        margin: 0 5px 10px 0 !important;
+    }
+    header h2 {
+        font-size: 300%;
+    }
+    #header-top>a {
+        bottom: 10% !important;
+    }
+    .img-wrap {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-item {
+        display: block;
+        text-align: center;
+    }
+    .content-text {
+        text-align: justify;
+    }
+    .portfolio-item {
+        width: 40% !important;
+    }
 }
