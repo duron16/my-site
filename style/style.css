@@ -188,7 +188,7 @@ header h2 span {
 }
 .portfolio-item {
     position: relative;
-    width: 31%;
+    width: 30%;
     margin: 15px 1%;
     display: inline-block;
 }
@@ -240,6 +240,7 @@ header h2 span {
 }
 /*Resume*/
 #resume {
+    overflow: hidden;
 /*    min-width: 960px;*/
 }
 .resume-nav {
@@ -394,6 +395,10 @@ h5 {
     border-radius: 50%;
     box-shadow: 0 0 5px 4px #555;
 }
+.screw img {
+    width: 100%;
+    height: auto;
+}
 .screw-tl {top: 30px; left: 30px; transform: rotate(-20deg)}
 .screw-tr {top: 30px; right: 30px;transform: rotate(-50deg)}
 .screw-bl {bottom: 30px; left: 30px; transform: rotate(100deg)}
@@ -453,7 +458,10 @@ footer {
     width: 100%;
 /*    min-width: 960px;*/
     background: #3d3d3d;
-    padding: 30px 0;
+    padding: 30px 0 0;
+}
+footer .container {
+    padding-bottom: 30px;
 }
 footer .container:after {
     content: '';
@@ -463,7 +471,7 @@ footer .container:after {
 footer .nav {
     width: 50%;
     margin-right: -25px;
-/*    padding: 0 10%;*/
+    padding-right: 25px;
     float: left;
     text-align: center;
     box-sizing: border-box;
@@ -497,7 +505,7 @@ footer .nav a:hover {
     width: 50%;
     float: right;
     margin-left: -25px;
-/*    padding: 0 10%;*/
+    padding-left: 25px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -537,6 +545,9 @@ span#skype {background-position: -90px 0;}
 }
 .social span:hover {
 	opacity: 1;
+}
+div#skype-name {
+    position: relative;
 }
 .social div#skype-name:hover p {
 	opacity: 1;
@@ -628,12 +639,16 @@ span#skype {background-position: -90px 0;}
     .content-text {
         text-align: justify;
     }
+    .portfolio-item > a {
+        height: 200px !important;
+    }
     .portfolio-item {
-        width: 40% !important;
+        width: 43% !important;
     }
     .resume-nav {
         display: none;
     }
+    #contact {padding-bottom: 20px;}
     .photo {
         margin: auto;
         float: none;
@@ -645,12 +660,25 @@ span#skype {background-position: -90px 0;}
     .contact-right {
         width: 100%;
     }
-    footer .nav,
-    footer .social {
-        padding: 0 1%;
-        outline: 1px solid red;
+    .screw {
+        width: 35px !important;
+        height: 35px !important;
     }
-        width: 35% !important;
-        width: 65% !important;
+    .screw-tl {top: 15px; left: 15px; transform: rotate(-20deg)}
+    .screw-tr {top: 15px; right: 15px;transform: rotate(-50deg)}
+    .screw-bl {bottom: 15px; left: 15px; transform: rotate(100deg)}
+    .screw-br {bottom: 15px; right: 15px; transform: rotate(45deg)}
+    footer .nav {
+        width: 40%;
+    }
+    footer .social {
+        width: 60%;
+    }
+    footer .social li + li {
+        margin-left: 5px;
+    }
+    .social p {
+        margin-left: 0 !important;
+        right: 0;top: 100%;
     }
 }
