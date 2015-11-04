@@ -136,7 +136,6 @@ header h2 span {
 #header-top>a:hover {
 	background-color: #800;
 }
-
 /*Content*/
 #content {
     background-color: #bbb;
@@ -232,14 +231,13 @@ header h2 span {
     z-index: 100;
     padding: 15px;
     font: bold 90% "Georgia";
-    background: #222;
+/*    background: linear-gradient(#4871c4, #252b3b);*/
+    background: linear-gradient(#555, #222);
     transition: all .1s linear;
-    border-radius: 6px;
 }
 .download-psd a:hover {
-    box-shadow: 0 0 0 2px #ccc, 0 0 0 4px #222;
+    box-shadow: 0 0 0 2px #ddd, 0 0 0 4px #444;
 }
-
 /*Resume*/
 #resume {
 /*    min-width: 960px;*/
@@ -247,10 +245,11 @@ header h2 span {
 .resume-nav {
     margin-bottom: 10px;
     float: right;
+    padding: 0;
 }
 .resume-nav li {
     display: inline;
-    padding: 3px 15px;
+    padding: 0 10px;
     margin-left: -3px;
 }
 .resume-nav li + li {
@@ -258,6 +257,7 @@ header h2 span {
 }
 .resume-nav a {
     color: #222;
+    font-size: 80%;
     text-transform: lowercase;
 }
 .resume-nav a:hover {
@@ -271,7 +271,6 @@ header h2 span {
     width: 200px;
     height: 250px;
     float: right;
-    margin-top: -80px;
     cursor: pointer;
     transition: transform .2s linear .1s, border .3s linear;
     -webkit-transition: transform .2s linear .1s, border .3s linear;
@@ -299,7 +298,8 @@ header h2 span {
 }
 h4 {
     font: bold 175% Arial;
-    padding: 30px;
+    padding: 2.5%;
+    float: left;
 }
 h5 {
     font: bold 125% Arial;
@@ -353,8 +353,7 @@ h5 {
     list-style: disc inside url(../img/check.png);
 }
 #resume ul, p {
-    padding: 0 25px;
-    outline: 1px solid red;
+    padding: 0 2%;
 }
 
 /*Contact*/
@@ -454,8 +453,6 @@ footer {
     width: 100%;
 /*    min-width: 960px;*/
     background: #3d3d3d;
-}
-footer .container {
     padding: 30px 0;
 }
 footer .container:after {
@@ -466,11 +463,16 @@ footer .container:after {
 footer .nav {
     width: 50%;
     margin-right: -25px;
-    padding: 0 10%;
+/*    padding: 0 10%;*/
     float: left;
+    text-align: center;
     box-sizing: border-box;
 }
+footer .nav ul {
+    display: inline-block;
+}
 footer .nav li {
+    text-align: left;
     padding: 3px 0;
 }
 footer .nav a {
@@ -495,9 +497,13 @@ footer .nav a:hover {
     width: 50%;
     float: right;
     margin-left: -25px;
-    padding: 0 10%;
+/*    padding: 0 10%;*/
     text-align: center;
     box-sizing: border-box;
+}
+.social ul {
+    display: inline-block;
+    padding: 12px 0;
 }
 .social li {
     display: inline-block;
@@ -507,13 +513,15 @@ footer .nav a:hover {
 	width: 45px;
 	height: 45px;
     background: url(../img/social-sprite.jpg);
-    margin-right: 10px;
     opacity: .5;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
+}
+.social li + li {
+    margin-left: 10px;
 }
 span#vk {background-position: 0 0;}
 span#gmail {background-position: -45px 0;}
@@ -593,10 +601,10 @@ span#skype {background-position: -90px 0;}
     }
 }
 @media only screen and (max-width: 730px) {
-    .nav {
+    header .nav {
         margin: 10px!important;
     }
-    .nav li {
+    header .nav li {
         float: none !important;
         text-align: left;
         margin: 0 !important;
@@ -622,5 +630,27 @@ span#skype {background-position: -90px 0;}
     }
     .portfolio-item {
         width: 40% !important;
+    }
+    .resume-nav {
+        display: none;
+    }
+    .photo {
+        margin: auto;
+        float: none;
+        clear: both;
+    }
+    .contact-left {
+        width: 100%;
+    }
+    .contact-right {
+        width: 100%;
+    }
+    footer .nav,
+    footer .social {
+        padding: 0 1%;
+        outline: 1px solid red;
+    }
+        width: 35% !important;
+        width: 65% !important;
     }
 }
