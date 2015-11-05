@@ -145,9 +145,11 @@ header h2 span {
 /*    min-width: 960px;*/
 }
 .content-item {
-    margin-top: 30px;
-    vertical-align: middle;
     outline: 1px solid red;
+    height: 100%;
+}
+.content-item + .content-item {
+    margin-top: 30px;
 }
 .content-item:after {
     content: '';
@@ -161,19 +163,16 @@ header h2 span {
     width: 40%;
     overflow: hidden;
     float: left;
-    vertical-align: middle;
 }
 .img-wrap img {
     border-radius: 5px;
     width: 100%;
 }
 .content-text {
-    width: 59%;
-    outline: 1px solid red;
-    box-sizing: border-box;
+    width: 49%;
+    outline: 3px solid red;
     display: inline-block;
-    display: table-cell;
-    vertical-align: middle;
+    padding: 0 5%;
 }
 /*--Portfolio--*/
 #portfolio {
