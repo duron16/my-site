@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li class="nav-active"><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="registration">
+                    <div class="menu">
+                        <ul>
+                            <li class="active">Реєстрація</li>
+                            <li><a href="reg-customer.html">Реєстрація замовника</a></li>
+                            <li><a href="reg-member.html">Реєстрація учасника</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <h1>Реєстрація</h1>
+                    <div class="registration-step">
+                        <div class="registration-step-round">Крок 1</div>
+                        <div class="registration-step-dscr"><p>Вибрати з відповідного меню тип реєстрації. Реєстрація для замовника або реєстрація для учасника. Різні типи реєстрації надають Вам різні права для розміщення лоту та участі в аукціоні. Для ознайомлення з більш детальною інформацією звертайтесь до FAQ.</p></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="registration-step">
+                        <div class="registration-step-dscr"><p>Заповнити поля, які ви можете побачити перейшовши по відповідному посиланню. Усі дані конфіденційні, поширенню не підлягають. Використовуються для зворотного зв’язку з Вами та участі в аукціоні.</p></div>
+                        <div class="registration-step-round">Крок 2</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="registration-step">
+                        <div class="registration-step-round">Крок 3</div>
+                        <div class="registration-step-dscr"><p>Перейти на вказану Вами емейл адресу, на яку відправляється автоматичний лист з даними для входу. Зайшовши в особистий кабінет Вам потрібно ідентифікувати свої дані. Варіанти ідентифікації Ви можете дізнатись за телефонами або у розділі FAQ.</p></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="registration-step">
+                        <div class="registration-step-dscr"><p>У залежності з вибраним типом реєстрації Ви маєте право розміщувати лоти або брати участь у купівлі інших розміщених лотів. </p></div>
+                        <div class="registration-step-round">Крок 4</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

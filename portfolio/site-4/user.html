@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="new-user">
+                    <h1>Редагування даних про користувача</h1>
+<!--user-table1-->
+					<form>
+						<div class="table">
+							<div class="row table-caption">
+								<div class="cell">Особисті данні</div>
+							</div>
+							<div class="row">
+								<div class="cell cell1">
+									<label for="fio">ПІБ<span class="red">*</span></label>
+								</div>
+								<div class="cell cell2">
+									<input type="text" id="fio" required autofocus>
+									<input type="text" required>
+									<input type="text" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell1">
+									<label for="office">Посада</label>
+								</div>
+								<div class="cell cell2">
+									<input type="text" id="office" class="input-width">
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell1">
+									<label for="tel">Номер контактного телефону<span class="red">*</span></label>
+								</div>
+								<div class="cell cell2">
+									<input type="text" id="tel" class="input-width" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell1">
+									<label for="fax">Факс</label>
+								</div>
+								<div class="cell cell2">
+									<input type="text" id="fax" class="input-width">
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell cell1">
+									<label for="mail">Адреса електронної пошти<span class="red">*</span></label>
+								</div>
+								<div class="cell cell2">
+									<input type="text" id="mail" class="input-width" required>
+								</div>
+							</div>
+						</div>
+					</form>
+<!--user-table1-end-->
+
+<!--user-table2-->
+                    <div class="table">
+                        <div class="row table-caption">
+                            <div class="cell">Зміна пароля</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <label for="old-pass">Старий пароль <span class="label-bottom">(заповніть, щоб змінити пароль)</span></label>
+                            </div>
+                            <div class="cell cell2">
+                                <input type="password" id="old-pass" class="input-long">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <label for="new-pass">Новий пароль <span class="red">(не менше 8 символів)</span><span class="label-bottom">(не вказуйте, щоб залишити попередній)</span></label>
+                            </div>
+                            <div class="cell cell2">
+                                <input type="password" id="new-pass" class="input-long">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <label for="new-pass2">Підтвердження пароля <span class="label-bottom">(вкажіть, якщо вказаний пароль)</span></label>
+                            </div>
+                            <div class="cell cell2">
+                                <input type="password" id="new-pass2" class="input-long">
+                            </div>
+                        </div>
+                    </div>
+<!--user-table2-end-->
+
+<!--user-table3-->
+                    <div class="table">
+                        <div class="row table-caption">
+                            <div class="cell">Поштові розсилання</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell3">
+                                <label><input type="checkbox">Підписатися на розсилання новин</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell3">
+                                <label><input type="checkbox">Підписатися на розсилання інформації про торги</label>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="cell cell3 button">
+                            <button>Зберегти зміни</button>
+                        </div>
+                    </div>
+                </div>
+<!--user-table3-end-->
+            </div>
+        </div>
+<!--content-end-->
+    </div>
+    </div>
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>

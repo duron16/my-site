@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li class="nav-active"><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="regulations">
+                    <h1>Регламент</h1>
+                    <h3>1. Основні поняття</h3>
+                    <p><strong>Система (електронна торговельна площадка)</strong> - створена для проведення конкурентних закупівельних процедур в електронній формі;</p>
+                    <p><strong>Відкрита частина Системи</strong> - для роботи в системі не вимагає реєстрації;</p>
+                    <p><strong>«Особистий кабінет»</strong> - надається зареєстрованому учаснику, якому доступний робочий розділ на сайті. Для його доступу необхідно пройти авторизацію, вказавши ім’я користувача і пароль учасника;</p>
+                    <p><strong>Оператор</strong> - Юридична особа, що володіє Системою і забезпечує діяльність з експлуатації Системи;</p>
+                    <p><strong>Організатор торгів</strong> (закупівельної процедури) - Користувач Системи, юридична особа, за замовленням якого проводиться торгова процедура в Системі;</p>
+                    <p><strong>Постачальник</strong> - юридична особа, яка пропонує свою продукцію або послуги;</p>
+                    <p><strong>Учасник торгів</strong> (закупівельної процедури) – юридична особа, яка запропонувала Організатору торговельну процедуру у відповідності з цим Регламентом;</p>
+                    <p><strong>Торгова процедура</strong> (торги) – це  процедура, що виконується в Системі,  однозначно регламентована заданим способом її проведення, сповіщенням і документацією про проведення торговельної процедури.  Здійснена  для  вибору постачальників та укладання договорів (контрактів) на поставку товарів, виконання робіт, надання послуг для потреб Організатора торгів, або в цілях вибору покупців незатребуваних товарно-матеріальних цінностей.</p>
+                    <p><strong>Лот</strong> - запропонована товарна позиція, роботи, послуги, складова предмет торгової процедури, включає один або декілька лотів; </p>
+                    <p><strong>Спосіб проведення торгів</strong> (торгової процедури) - засновані на результатах пропозицій незалежних Учасників торгової процедури;</p>
+                    <p><strong>Документація про проведення торговельної процедури</strong> – це комплект електронних документів, який  містить усю необхідну інформацію про предмет торгової процедури, умови її проведення і обов’язково розглянуте, як невід'ємне додаток до повідомлення,  проведення торговельної процедури;</p>
+                    <p><strong>Заявка</strong> (Пропозиція) – це електронний документ, що представлений Учасником торгів задля  участі в торговельній процедурі відповідно до цього Регламенту;</p>
+                    <p><strong>Переможець</strong> - Учасник торгів ,якого обрала комісія  для укладення договору (контракту) після аналізу пропозицій, які буди  подані Учасниками торгової процедури;</p>
+                    <p><strong>Електронний документ</strong> – це документ, інформація в якому представлена в електронно-цифровій формі.</p>
+                    <p><strong>Засвідчувальний центр</strong> - організація, що надає послуги, пов'язані з виготовленням сертифіката ключа ЕЦП, відповідно до законодавства України про електронний цифровий підпис.</p>
+                    <h3>2. Загальні положення</h3>
+                    <p>2.1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero tempora, ducimus sequi assumenda consectetur, quae et expedita. Numquam nostrum, asperiores molestiae in obcaecati aliquam nemo libero est, molestias id corporis.</p>
+                    <p>2.2. Регламент розроблений відповідно до Цивільного кодексу України.</p>
+                    <p>2.3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolor necessitatibus voluptas quis.</p>
+                    <h3>3. Приєднання до Регламенту</h3>
+                    <p>3.1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi, veritatis rem aliquid minima fugiat, velit, repellat beatae a inventore odio autem deleniti perferendis suscipit quis similique saepe nemo earum.</p>
+                    <p>3.2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laudantium a facilis, reprehenderit voluptatem sint id libero recusandae amet, possimus odit labore obcaecati magnam optio et dolorem aperiam maiores quaerat?</p>
+                    <h3>4. Зміна (доповнення) Регламенту</h3>
+                    <p>4.1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis perspiciatis ullam itaque magnam laborum! At quo quis totam voluptas tempora possimus excepturi assumenda deserunt, numquam explicabo provident delectus veritatis dignissimos!</p>
+                </div>
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>

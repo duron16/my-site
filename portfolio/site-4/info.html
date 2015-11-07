@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li class="nav-active"><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="info">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li class="active">Корисна інформація</li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <h1>Довідкова інформація</h1>
+                    <div class="info-item">
+                        <img src="img/info.png" alt="Інформація" title="Інформація">
+                        <div class="info-item-content">
+                            <p><a href="#">Види електронних торгів</a></p>
+                            <p><a href="#">Для дилерів</a></p>
+                            <p><a href="#">Електронні торги при банкрутстві</a></p>
+                            <p><a href="#">Послуги для Вашого бізнесу</a></p>
+                            <p><a href="#">Опис процедур</a></p>
+                            <p><a href="#">Фінансова гарантія</a></p>
+                            <p><a href="#">Питання та відповіді</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <img src="img/notes.png" alt="Замітки" title="Замітки">
+                        <div class="info-item-content">
+                            <p><a href="#">Наші переваги очевидні</a></p>
+                            <p><a href="#">Тендери в Україні</a></p>
+                            <p><a href="#">Як стати успішним</a></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "ХХХ". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

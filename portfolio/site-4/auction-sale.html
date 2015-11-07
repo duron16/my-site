@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li class="nav-active"><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="auction-all.html">Всі аукціони</a></li>
+                        <li><a href="auction-purchase.html">Купівля</a></li>
+                        <li class="active">Продаж</li>
+                        <li><a href="auction-realization.html">Реалізація майна у справах про банкрутство</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+<!--table1-->
+                <div class="table table1">
+                    <div class="row">
+                        <div class="cell cell1">Предмет торгів
+<span class="span-dscr">Допускається використання шаблонів: ? - будь-який набір символів, ! - один символ.</span></div>
+                        <div class="cell cell2">
+                            <input type="text" class="long">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Організатор торгів
+<span class="span-dscr">Найменування, ЄДРПОУ або ІПН</span></div>
+                        <div class="cell cell2">
+                            <input type="text" class="long">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="cell cell1">Початкова ціна лота, грн.</div>
+                        <div class="cell cell2">
+                            <input type="text" placeholder="від">
+                            <input type="text" placeholder="до">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Дата публікації</div>
+                        <div class="cell cell2">
+                            <input type="text" class="short" placeholder="З">
+                            <a href="#" class="calendar"><img src="img/calendar.png" alt="calendar"></a><span class="date-color">(дд.мм.рррр)</span>
+                            <input type="text" class="short" placeholder="по">
+                            <a href="#" class="calendar"><img src="img/calendar.png" alt="calendar"></a><span class="date-color">(дд.мм.рррр)</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Дата останньої зміни</div>
+                        <div class="cell cell2">
+                            <input type="text" class="short" placeholder="З">
+                            <a href="#" class="calendar"><img src="img/calendar.png" alt="calendar"></a><span class="date-color">(дд.мм.рррр)</span>
+                            <input type="text" class="short" placeholder="по">
+                            <a href="#" class="calendar"><img src="img/calendar.png" alt="calendar"></a><span class="date-color">(дд.мм.рррр)</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Дата закінчення подання пропозицій</div>
+                        <div class="cell cell2">
+                            <input type="text" class="short" placeholder="З">
+                            <a href="#" class="calendar"><img src="img/calendar.png" alt="calendar"></a><span class="date-color">(дд.мм.рррр)</span>
+                            <input type="text" class="short" placeholder="по">
+                            <a href="#" class="calendar"><img src="img/calendar.png" alt="calendar"></a><span class="date-color">(дд.мм.рррр)</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Реєстровий номер</div>
+                        <div class="cell cell2">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Стан торгів</div>
+                        <div class="cell cell2">
+                            <select class="long">
+                                <option value="">йде прийом заявок</option>
+                                <option value="">прийом заявок завершено</option>
+                                <option value="">в стадії проведення</option>
+                                <option value="">проводяться підсумки</option>
+                                <option value="">торги завершені</option>
+                                <option value="">торги відмінені</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Сортування</div>
+                        <div class="cell cell2">
+                            <select>
+                                <option value="">за датою публікації</option>
+                                <option value="">за датою внесення змін</option>
+                                <option value="">за алфавітом</option>
+                                <option value="">за реєстровим номером</option>
+                                <option value="">за формою торгів</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell button-center">
+                            <button class="btn-find">Пошук</button>
+                        </div>
+                    </div>
+                </div>
+<!--table1-end-->
+
+<!--table2-->
+                <div class="table table2">
+                    <div class="row table-caption">
+                        <div class="cell cell1">№</div>
+                        <div class="cell cell2">Предмет торгів</div>
+                        <div class="cell cell3">Початкова ціна</div>
+                        <div class="cell cell4">Форма торгів</div>
+                        <div class="cell cell5">Стан торгів</div>
+                        <div class="cell cell6">Завершення прийому заявок</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">6429-К</div>
+                        <div class="cell cell2"><a href="#">ГАЗ 3302, рік випуску – 2000, колір – білий, паливо – дизель, об’єм двигуна – 2134 куб. см.</a></div>
+                        <div class="cell cell3">45 000,00 грн.</div>
+                        <div class="cell cell4">Аукціон ХХХ</div>
+                        <div class="cell cell5">оголошені</div>
+                        <div class="cell cell6">14.09.2015 15:00</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">6429-К</div>
+                        <div class="cell cell2"><a href="#">KIA CERATO, тип ТЗ (кузова) – легковий (хетчбек), колір – сірий, паливо – бензин, об’єм двигуна – 1299 куб. см.</a></div>
+                        <div class="cell cell3">171 000,00 грн.</div>
+                        <div class="cell cell4">Аукціон ХХХ</div>
+                        <div class="cell cell5">оголошені</div>
+                        <div class="cell cell6">21.10.2015 14:00</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">6429-К</div>
+                        <div class="cell cell2"><a href="#">Підводний човен</a></div>
+                        <div class="cell cell3">-</div>
+                        <div class="cell cell4">Попозиційний аукціон на закупівлю</div>
+                        <div class="cell cell5">підводяться підсумки</div>
+                        <div class="cell cell6">25.10.2015 15:00</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">6429-К</div>
+                        <div class="cell cell2"><a href="#">Бутилка водки</a></div>
+                        <div class="cell cell3">-</div>
+                        <div class="cell cell4">Попозиційний аукціон на закупівлю</div>
+                        <div class="cell cell5">підводяться підсумки</div>
+                        <div class="cell cell6">27.09.2015 10:30</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">6429-К</div>
+                        <div class="cell cell2"><a href="#">Складний ніж</a></div>
+                        <div class="cell cell3">500,00 грн.</div>
+                        <div class="cell cell4">Закупівля</div>
+                        <div class="cell cell5">торги завершені</div>
+                        <div class="cell cell6">25.04.2015 18:00</div>
+                    </div>
+                    <div class="pages">Сторінки: </div>
+                </div>
+<!--table2-end-->
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "ХХХ". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

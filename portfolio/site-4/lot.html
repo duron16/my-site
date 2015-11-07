@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li class="nav-active"><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li class="active">Описання лота</li>
+                        <li><a href="lot-concurs.html">Добавити ціну</a></li>
+                        <li><a href="lot-auction.html">Аукціон лота</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+<!--lot-table1-->
+                <div class="table table-lot-2item">
+                    <div class="row table-caption">
+                        <div class="cell">Інформація про процедуру торгів</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Форма проведення торгів</div>
+                        <div class="cell cell2">Аукціон ХХХ</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Початок прийому пропозицій</div>
+                        <div class="cell cell2">14.09.2015 11:00</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Закінчення прийому пропозицій</div>
+                        <div class="cell cell2">14.09.2015 15:00</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Форма подачі пропозицій про ціну</div>
+                        <div class="cell cell2">Показувати учасникам найкращу ціну та індивідуальнй код конкурента ("відкриті" торги)</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Мінімальний крок підвищення ціни при повторному котируванні</div>
+                        <div class="cell cell2">1 %</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Максимальна кількість продовжень після закінчення прийому пропозицій</div>
+                        <div class="cell cell2">100</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Величина продовження</div>
+                        <div class="cell cell2">10 хвилин</div>
+                    </div>
+                </div>
+<!--lot-table1-end-->
+
+<!--lot-table2-->
+                <div class="table table-lot-2item">
+                    <div class="row table-caption">
+                        <div class="cell">Інформація про предмет торгів</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Стан торгів</div>
+                        <div class="cell cell2"><span class="red">оголошені</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Валюта</div>
+                        <div class="cell cell2">Гривня</div>
+                    </div>
+                </div>
+<!--lot-table2-end-->
+
+                <p>Позиції специфікації:</p>
+
+<!--lot-table3-->
+                <div class="table table-lot-8item">
+                    <div class="row table-caption">
+                        <div class="cell cell1">№</div>
+                        <div class="cell cell2">Номенклатурний №</div>
+                        <div class="cell cell3">Найменування, технічні характеристики</div>
+                        <div class="cell cell4">Од. вимір.</div>
+                        <div class="cell cell5">Кількість</div>
+                        <div class="cell cell6">Початкова ціна за од.</div>
+                        <div class="cell cell7">Сума</div>
+                        <div class="cell cell8">Термін постачання</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">1</div>
+                        <div class="cell cell2"></div>
+                        <div class="cell cell3">ЗИЛ 3302, рік випуску – 2008, тип ТЗ (кузова) – вантажний (бортовий - тентований), колір – білий, паливо – дизельне, об’єм двигуна – 2134 куб. см.</div>
+                        <div class="cell cell4">Штука</div>
+                        <div class="cell cell5">1</div>
+                        <div class="cell cell6">45 000,00</div>
+                        <div class="cell cell7">45 000,00</div>
+                        <div class="cell cell8">Згідно договору</div>
+                    </div>
+                </div>
+<!--lot-table3-end-->
+
+<!--lot-table4-->
+                <div class="table table-lot-2item">
+                    <div class="row table-caption">
+                        <div class="cell">Інформація про порядок участі в торгах</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Дозволена подача заяв без використання ЕП</div>
+                        <div class="cell cell2">Так</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Вимоги до учасників торгів</div>
+                        <div class="cell cell2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae amet, nobis impedit, dolorem, cum facere fuga quisquam assumenda cupiditate molestias at totam aut atque animi corporis eligendi magni! Illo, dolores. Voluptatum soluta, architecto fugit minus laudantium vel eius dolorem iusto repellat sed. Accusamus perferendis quisquam aut. Officiis, voluptatem laboriosam dolores vel numquam fugiat cupiditate, nisi ex quidem asperiores illo nesciunt. Possimus mollitia esse recusandae repellat quod voluptates saepe cum autem fugit debitis est voluptate a, doloremque, maxime vero, minima ducimus expedita tenetur! Dolore commodi accusamus fuga aliquid nesciunt eveniet temporibus! Blanditiis doloremque quo autem iste laboriosam inventore adipisci! Nihil eos, dolorum atque, maxime iusto, cumque in aspernatur vero perspiciatis voluptatem assumenda blanditiis aliquam laborum nemo? Consequuntur delectus, necessitatibus vero tempore!</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Місцезнаходження лоту</div>
+                        <div class="cell cell2">м. Київ, вул. Lorem, 34.</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Розмір винагороди організатора, %</div>
+                        <div class="cell cell2">3.00</div>
+                    </div>
+                </div>
+<!--lot-table4-end-->
+
+<!--lot-table5-->
+                <div class="table table-lot-2item">
+                    <div class="row table-caption">
+                        <div class="cell">Інформація про умови договору</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Умови поставки товарів, виконання робіт, надання послуг</div>
+                        <div class="cell cell2">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci hic ea alias, error reiciendis libero nostrum, illo cum dignissimos quas animi suscipit, obcaecati maiores quam laudantium et ab nobis, fuga. 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum perspiciatis, adipisci similique, placeat doloribus iure soluta distinctio magni impedit eligendi natus tempora, laudantium perferendis fugit blanditiis ex nesciunt eius. Excepturi.</div>
+                    </div>
+                </div>
+<!--lot-table5-end-->
+
+<!--lot-table6-->
+                <div class="table table-lot-2item">
+                    <div class="row table-caption">
+                        <div class="cell">Примітки</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell1">Примітки</div>
+                        <div class="cell cell2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit natus ipsam saepe quibusdam officiis explicabo vitae eius quam cum odit reiciendis quasi distinctio aperiam eaque consequatur, quisquam sunt! Minima, corporis.</div>
+                    </div>
+                </div>
+<!--lot-table6-end-->
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

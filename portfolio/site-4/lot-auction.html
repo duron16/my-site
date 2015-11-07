@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li class="nav-active"><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="lot-auction">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="lot.html">Описання лота</a></li>
+                            <li><a href="lot-concurs.html">Добавити ціну</a></li>
+                            <li class="active">Аукціон лота</li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+<!--lot-auction-->
+                    <h1>Заголовок</h1>
+                    <div class="lot-auction-img-dscr">
+                        <div class="lot-auction-img">
+                            <img src="img/1.jpg" alt="Зображення лота">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem enim, lacinia eget fermentum sed, pulvinar feugiat nunc. Quisque neque enim, fringilla a lorem eu, volutpat molestie nisl. Phasellus aliquet at nulla a faucibus. In hac habitasse platea dictumst. Etiam quis ipsum eget dolor efficitur efficitur. In vulputate magna vel molestie pulvinar. Curabitur rhoncus sit amet turpis et posuere. Duis mi metus, pellentesque in nulla at, viverra volutpat augue. Sed aliquet nisl eu nibh tempor imperdiet eget vel lacus. Etiam eget ante ac purus commodo posuere.</p>
+                    </div>
+                    <div class="lot-auction-info">
+                        <div class="lot-auction-dscr-price"><span>2 010</span> грн.</div>
+                        <div class="lot-auction-dscr-rate">
+                            <form action="#">
+                                <input type="text">
+                                <button>Ставка</button>
+                            </form>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="lot-auction-dscr-price-before">
+                            <div class="price-before-item font1">
+                                <a href="#" title="user-id-1234"><img src="img/user-icon.png" alt="user" width="20"></a>
+                                <p><span>2 010</span> грн.</p>
+                            </div>
+                            <div class="price-before-item font2">
+                                <a href="#" title="user-id-1235"><img src="img/user-icon.png" alt="user" width="15"></a>
+                                <p><span>2 005</span> грн.</p>
+                            </div>
+                            <div class="price-before-item font3">
+                                <a href="#" title="user-id-1236"><img src="img/user-icon.png" alt="user" width="10"></a>
+                                <p><span>2 000</span> грн.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+<!--lot-auction-end-->
+
+<!--table-lot-auction-->
+                    <div class="table">
+                        <div class="row table-caption">
+                            <div class="cell">ID</div>
+                            <div class="cell">Номер лота</div>
+                            <div class="cell">Ціна</div>
+                            <div class="cell">Час</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">1</div>
+                            <div class="cell cell2">2</div>
+                            <div class="cell cell3">3</div>
+                            <div class="cell cell4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">1</div>
+                            <div class="cell cell2">2</div>
+                            <div class="cell cell3">3</div>
+                            <div class="cell cell4">4</div>
+                        </div>
+                    </div>
+<!--table-lot-auction-end-->
+
+
+
+               </div>
+            </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

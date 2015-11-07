@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="partners">
+                    <h1>Наші партнери</h1>
+                    <div class="table">
+                        <div class="row">
+                            <div class="cell cell1">
+                                <a href="#"><img src="img/partner1.jpg" alt=""></a>
+                            </div>
+                            <div class="cell cell2">
+                                <p><a href="#">Чикагзька товарна біржа (CBOT) Chicago Board of Trade</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <a href="#"><img src="img/partner2.jpg" alt=""></a>
+                            </div>
+                            <div class="cell cell2">
+                                <p><a href="#">Зернова біржа Міннеаполіса, Міннесота (MGEX) Minneapolis Grain Exchange</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <a href="#"><img src="img/partner3.jpg" alt=""></a>
+                            </div>
+                            <div class="cell cell2">
+                                <p><a href="#">Товарна біржа Канзас-Сіті, Міссурі (KCBT) Kansas City Board of Trade</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <a href="#"><img src="img/partner4.jpg" alt=""></a>
+                            </div>
+                            <div class="cell cell2">
+                                <p><a href="#">Лондонська біржа металів (LME) London Metal Exchange</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <a href="#"><img src="img/partner5.jpg" alt=""></a>
+                            </div>
+                            <div class="cell cell2">
+                                <p><a href="#">Бременська біржа бавовни Bremen Cotton Exchange Bremer Baumwollboerse</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">
+                                <a href="#"><img src="img/partner6.jpg" alt=""></a>
+                            </div>
+                            <div class="cell cell2">
+                                <p><a href="#">Австралійська біржа вовни (AWEX) Australian Wool Exchange</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

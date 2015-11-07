@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li><a href="tariff.html">Тарифи</a></li>
+                        <li class="nav-active"><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="reg-customer">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="registration.html">Реєстрація</a></li>
+                            <li class="active">Реєстрація замовника</li>
+                            <li><a href="reg-member.html">Реєстрація учасника</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <h1>Реєстрація замовника</h1>
+                    <form action="#">
+                        <div class="table">
+                            <div class="row">
+                                <div class="cell cell1">Спосіб реалізації майна<span class="red">*</span></div>
+                                <div class="cell cell2">
+                                    <select>
+                                        <option value="">Аукціон</option>
+                                        <option value="">Конкурс</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust1">Назва (підприємства, установи, організації)<span class="red">*</span></label>
+                                </div>
+                                <div class="cell cell2">
+                                    <input type="text" id="cust1" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust2">ПІБ замовника торгів<span class="red">*</span></label></div>
+                                <div class="cell cell2">
+                                    <input type="text" id="cust2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">Посада</div>
+                                <div class="cell cell2">
+                                    <label><input type="radio" name="office">Директор</label>
+                                    <label><input type="radio" name="office">Уповноважена особа</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust3">Місце державної реєстрації<span class="red">*</span></label>
+                                </div>
+                                <div class="cell cell2">
+                                    <input type="text" id="cust3">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust4">Фактична (поштова) адреса</label>
+                                </div>
+                                <div class="cell cell2">
+                                    <input type="text" id="cust4">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust5">Код ЄДРПОУ</label>
+                                </div>
+                                <div class="cell cell2">
+                                    <input type="text" id="cust5">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust6">Телефон</label>
+                                </div>
+                                <div class="cell cell2">
+                                    <input type="text" id="cust6">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="cell cell1">
+                                    <label for="cust7">Електронна адреса</label>
+                                </div>
+                                <div class="cell cell2">
+                                    <input type="email" id="cust7">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell3">
+                                    <label><input type="checkbox">Платник ПДВ</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">Виписка з Єдиного державного реєстру юридичних осіб та фізичних осіб-підприємців (в даному полі прикріплюється тільки сканована копія Виписки)<span class="red">*</span></div>
+                                <div class="cell cell2">
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell cell1">Рішення про призначення Уповноваженої особи Фонду гарантування вкладів на ліквідацію банку (прикріплюється сканована копія Рішення)</div>
+                                <div class="cell cell2">
+                                    <input type="file">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button>Продовжити</button>
+                        </div>
+                    </form>
+                </div>
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+

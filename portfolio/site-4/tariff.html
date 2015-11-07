@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="style/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.harmonica-menu .category').click(function(){$(this).next('.harmonica-menu-hidden').slideToggle();$(this).toggleClass('open');});
+});
+</script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<!--header-->
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Логотип"></a></div>
+                <div class="auth-block">
+                    <form action="#">
+                        <label for="login">Авторизація</label>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Логін</div><![endif]-->
+                        <input type="text" id="login" placeholder="login" required>
+                        <!--[if (lt IE 10)]><div style="text-align: left; font-size: 80%;">Пароль</div><![endif]-->
+                        <input type="password" placeholder="password" required>
+                        <button>Увійти</button>
+                    </form>
+                    <a href="registration.html">Реєстрація</a>
+                    <a href="recovery-password.html">Відновлення пароля</a>
+                </div>
+                <div class="name-company-block">
+                    <div class="name-company">
+                        <p class="name-company-phone">(044) 555-44-33</p>
+                        <p>Україна, м.Київ</p>
+                        <p>б-р Лесі Українки буд 260</p>
+                    </div>
+                    <div class="support">
+                        <a href="feedback.html">Потрібна допомога?</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav-home"><a href="index.html" title="На головну сторінку">&nbsp; </a></li>
+                        <li><a href="auction-all.html">Аукціони</a></li>
+                        <li class="nav-active"><a href="tariff.html">Тарифи</a></li>
+                        <li><a href="registration.html">Реєстрація</a></li>
+                        <li><a href="regulations.html">Регламент</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="container">
+                <div class="tariff">
+                    <h1>Тарифи</h1>
+<!--table-tariff1-->
+                    <div class="table tariff1">
+                        <div class="row table-caption">
+                            <div class="cell">Тариф безлімітний</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">Організація торгових процедур</div>
+                            <div class="cell cell2">0 грн.</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">Участь у торгах</div>
+                            <div class="cell cell2">0 грн.</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">Переможець торгів</div>
+                            <div class="cell cell2 cell-row">
+                                <div class="row">
+                                    <div class="cell">Сума лоту до 1 млн. грн.</div>
+                                    <div class="cell">Сума лоту від 1 млн. до 5 млн. грн.</div>
+                                    <div class="cell">Сума лоту від 5 млн. до 10 млн. грн.</div>
+                                    <div class="cell">Сума лоту від 10 млн.грн.</div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell">0,5% від суми лота</div>
+                                    <div class="cell">0,3% від суми лота</div>
+                                    <div class="cell">0,2% від суми лота</div>
+                                    <div class="cell">0,1% від суми лота</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>*Організація торговельних процедур на закупівлю та продаж</p>
+<!--table-tariff1-end-->
+
+<!--table-tariff2-->
+                    <div class="table tariff2">
+                        <div class="row table-caption">
+                            <div class="cell">Тариф "Мінімальний"</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1"></div>
+                            <div class="cell cell2">Організатор торгів</div>
+                            <div class="cell cell3">Учасник торгів</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">Організація торгівельної процедури</div>
+                            <div class="cell cell2">4 000 грн. на місяць</div>
+                            <div class="cell cell3">-</div>
+                        </div>
+                        <div class="row">
+                            <div class="cell cell1">Участь у торгівельній процедурі</div>
+                            <div class="cell cell2">-</div>
+                            <div class="cell cell3">Безкоштовно</div>
+                        </div>
+                    </div>
+                    <p>** організація торговельних процедур на закупівлю</p>
+<!--table-tariff2-end-->
+
+                </div>
+           </div>
+       </div>
+<!--content-end-->
+    </div>
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+			<button class="btn-find" onclick="print()">Друк</button>
+            Товарна біржа "XXX". Всі права захищені. Україна 2015.
+        </div>
+    </div>
+<!--footer-end-->
+
+</body>
+</html>
+
+
