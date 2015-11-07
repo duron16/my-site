@@ -9,7 +9,7 @@
     <title>Портфолио Дегодюк А.Н.</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
     <script src="js/js-form.js"></script>
 </head>
@@ -81,11 +81,11 @@
     		    </div>
             </div>
             <div class="content-item">
+                <div class="content-text">
+    		        <p>Здесь будет копирайт, когда придет муза и я его допишу )</p>
+    		    </div>
     		    <div class="img-wrap">
     		        <img src="img/item-2.jpg" alt="Взлет">
-    		    </div>
-                <div class="content-text">
-    		        <p>Здесь будет копирайт, когда придет муза, и я его допишу )</p>
     		    </div>
             </div>
     	</div>
@@ -95,25 +95,48 @@
     <div id="portfolio">
         <div class="container">
             <h2>Портфолио</h2>
-            <div class="portfolio-item">
-                <a href="portfolio/site-1/index.html" target="_blank"><img src="img/site-1.jpg" alt="Пример сайта" width="370" height="310"><span>HTML+CSS <br>Пример простой верстки</span></a>
-                <div class="download-psd">
-                    <a href="portfolio/site-1/travel.psd">Скачать PSD-макет</a>
+            <div class="portfolio-item-wrap">
+                <h5>Адаптивная верстка</h5>
+                <div class="portfolio-item">
+                    <a href="portfolio/site-3/index.html" target="_blank"><img src="img/site-3.jpg" alt="Пример сайта"><span>HTML+CSS+jQuery <br>Адаптивная верстка</span></a>
+                    <div class="download-psd">
+                        <a href="portfolio/site-3/portfolio.psd">Скачать PSD-макет</a>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <a href="portfolio/site-2/index.html" target="_blank"><img src="img/site-2.jpg" alt="Пример сайта" width="370" height="310"><span>HTML+CSS <br>Слайдер и галерея только CSS</span></a>
-                <div class="download-psd">
-                    <a href="portfolio/site-2/restaurant.psd">Скачать PSD-макет</a>
+            <div class="portfolio-item-wrap">
+                <h5>Одностраничники</h5>
+                <div class="portfolio-item">
+                    <a href="portfolio/site-1/index.html" target="_blank"><img src="img/site-1.jpg" alt="Пример сайта"><span>HTML+CSS <br>Пример простой верстки</span></a>
+                    <div class="download-psd">
+                        <a href="portfolio/site-1/travel.psd">Скачать PSD-макет</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <a href="portfolio/site-2/index.html" target="_blank"><img src="img/site-2.jpg" alt="Пример сайта"><span>HTML+CSS <br>Слайдер и галерея только CSS</span></a>
+                    <div class="download-psd">
+                        <a href="portfolio/site-2/restaurant.psd">Скачать PSD-макет</a>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <a href="portfolio/site-3/index.html" target="_blank"><img src="img/site-3.jpg" alt="Пример сайта" width="370" height="310"><span>HTML+CSS+jQuery <br>Адаптивная верстка</span></a>
-                <div class="download-psd">
-                    <a href="portfolio/site-3/portfolio.psd">Скачать PSD-макет</a>
+            <div class="portfolio-item-wrap">
+                <h5>Примеры сайтов</h5>
+            </div>
+            <div class="portfolio-item-wrap">
+                <h5>Запущенные проекты</h5>
+                <div class="portfolio-item">
+                    <a href="http://www.ilovednipro.com" target="_blank"><img src="img/ilovednipro.jpg" alt="Пример сайта"><span>www.ilovednipro.com</span></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="http://www.mmix.biz" target="_blank"><img src="img/mmix.jpg" alt="Пример сайта"><span>www.mmix.biz</span></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="http://www.mynotarius.kiev.ua/" target="_blank"><img src="img/mynotarius.jpg" alt="Пример сайта"><span>www.mynotarius.kiev.ua</span></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="http://www.dentalkiev.com/" target="_blank"><img src="img/dentalkiev.jpg" alt="Пример сайта"><span>www.dentalkiev.com</span></a>
                 </div>
             </div>
-            <div class="clear"></div>
         </div>
     </div>
     
@@ -148,7 +171,7 @@
                         </tr>
                         <tr>
                             <td>E-mail:</td>
-                            <td>aleksandr.degodyuk@gmail.com</td>
+                            <td><a href="mailto:aleksandr.degodyuk@gmail.com">aleksandr.degodyuk@gmail.com</a></td>
                         </tr>
                     </table>
                 </div>
@@ -156,8 +179,17 @@
                     <h5>Опыт работы</h5>
                     <hr>
                     <div class="work-experience-item">
-                        <p class="office">Главный специалист <br>Управления расчетных и пассивных продуктов
-    </p>
+                        <p class="office">Верстальщик</p>
+                        <p class="period">Июнь 2015 – по текущее время (5 мес.)</p>
+                        <p class="company">Маркетинговая компания "Marketing MIX"</p>
+                        <p>Обязанности:</p>
+                        <ul>
+                            <li>верстка сайтов (кроссбраузерная/валидная/семантическая);</li>
+                            <li>поддержка существующих проектов.</li>
+                        </ul>
+                    </div>
+                    <div class="work-experience-item">
+                        <p class="office">Главный специалист <br>Управления расчетных и пассивных продуктов</p>
                         <p class="period">Ноябрь 2013 – май 2015 (1 год 7 мес.)</p>
                         <p class="company">ПАО «Проминвестбанк»</p>
                         <p>Обязанности:</p>
@@ -165,7 +197,6 @@
                             <li>подпись о неразглашении информации.</li>
                         </ul>
                     </div>
-
                     <div class="work-experience-item">
                         <p class="office">Системный администратор</p>
                         <p class="period">Ноябрь 2012 – ноябрь 2013 (1 год)</p>
@@ -247,7 +278,7 @@
                     <li>Владею украинским и русским языками на высоком уровне.</li>
                     <li>Английский – Elementary.</li>
                     <li>Занимаюсь спортом/веду здоровый образ жизни.</li>
-                    <li>Есть права категории "В"</li>
+                    <li>Есть права категории "В".</li>
                 </ul>
             </div>
             </div>

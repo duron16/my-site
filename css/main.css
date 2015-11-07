@@ -24,13 +24,31 @@ body {
 	font: 100% Arial, sans-serif;
 	background-color: #ccc;
 }
+h4 {
+    font: bold 175% Arial;
+    padding: 2.5%;
+    float: left;
+}
+h5 {
+    font: bold 125% Arial;
+    color: #061f47;
+    padding: 0 40px;
+}
+
 .clear {clear: both;}
 .left {float: left;}
 .right {float: right;}
 
 @font-face {
     font-family: "Days Later";
-    src: url(../font/h2.otf);
+    src: url('../fonts/h2.otf');
+}
+@font-face {
+    font-family: "HelveticaLight";
+    src: url('../fonts/HelveticaLight.eot');
+    src: url('../fonts/HelveticaLight.eot?#iefix'),
+        url('../fonts/HelveticaLight.ttf'),
+        url('../fonts/HelveticaLight.woff');
 }
 #wrapper {
 	width: 100%;
@@ -56,7 +74,6 @@ h2 {
 /*Header*/
 header {
 	width: 100%;
-/*	min-width: 960px;*/
 	height: 100%;
 	min-height: 350px;
     position: relative;
@@ -142,11 +159,10 @@ header h2 span {
     font: 100% Verdana;
     text-align: justify;
     line-height: 1.2;
-/*    min-width: 960px;*/
 }
 .content-item {
-    outline: 1px solid red;
-    height: 100%;
+    width: 100%;
+    display: table;
 }
 .content-item + .content-item {
     margin-top: 30px;
@@ -156,28 +172,24 @@ header h2 span {
     display: block;
     clear: both;
 }
-.content-item:nth-of-type(2n) .img-wrap {
-    float: right;
-}
 .img-wrap {
     width: 40%;
     overflow: hidden;
-    float: left;
+    display: table-cell;
+    vertical-align: middle;
 }
 .img-wrap img {
     border-radius: 5px;
     width: 100%;
 }
 .content-text {
-    width: 49%;
-    outline: 3px solid red;
-    display: inline-block;
+    display: table-cell;
     padding: 0 5%;
+    vertical-align: middle;
 }
 /*--Portfolio--*/
 #portfolio {
     background-color: #ddd;
-/*    min-width: 960px;*/
     text-align: center;
 }
 #portfolio p {
@@ -185,17 +197,38 @@ header h2 span {
     text-transform: uppercase;
     margin: -60px 0 50px;
 }
+.portfolio-item-wrap {
+    box-shadow: 0 0 15px 5px #888;
+    padding: 15px 0;
+    background: #e8e8e8;
+}
+.portfolio-item-wrap + .portfolio-item-wrap {
+    margin-top: 35px;
+}
+.portfolio-item-wrap h5 {
+    color: #252b3b !important;
+    font: 170% "HelveticaLight";
+    text-transform: uppercase;
+    text-align: right;
+    margin: 25px 2.5%;
+    padding: 0 0 7px 0;
+    border-bottom: 2px solid #363f56;
+}
 .portfolio-item {
     position: relative;
     width: 30%;
     margin: 15px 1%;
     display: inline-block;
+    vertical-align: top;
 }
 .portfolio-item > a {
     display: block;
-    height: 260px;
+    max-height: 260px;
+/*    background: #000;*/
+/*    background: #fff;*/
     overflow: hidden;
     margin-bottom: 15px;
+    padding: 0;
     transition: all .1s;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
@@ -207,7 +240,8 @@ header h2 span {
 }
 .portfolio-item a img {
     width: 100%;
-    height: auto;
+    margin: 0 0 -5px 0 !important;
+    padding: 0 !important;
 }
 .portfolio-item span {
     position: absolute;
@@ -230,17 +264,23 @@ header h2 span {
     z-index: 100;
     padding: 15px;
     font: bold 90% "Georgia";
-/*    background: linear-gradient(#4871c4, #252b3b);*/
-    background: linear-gradient(#555, #222);
+    background: linear-gradient(#4871c4, #252b3b);
+    background: -webkit-linear-gradient(#4871c4, #252b3b);
+    background: -moz-linear-gradient(#4871c4, #252b3b);
+    background: -ms-linear-gradient(#4871c4, #252b3b);
+    background: -o-linear-gradient(#4871c4, #252b3b);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4871c4', endColorstr='#252b3b');
     transition: all .1s linear;
 }
 .download-psd a:hover {
-    box-shadow: 0 0 0 2px #ddd, 0 0 0 4px #444;
+    box-shadow: 0 0 0 2px #ddd, 0 0 0 4px #4871c4;
 }
 /*Resume*/
-#resume {
-    overflow: hidden;
-/*    min-width: 960px;*/
+#resume a {
+    color: inherit;
+}
+#resume a:hover {
+    text-decoration: underline;
 }
 .resume-nav {
     margin-bottom: 10px;
@@ -285,7 +325,6 @@ header h2 span {
     border: 7px solid #222;
 }
 .resume-item {
-/*    width: 800px;*/
     padding: 30px 2.5%;
     margin: 0 auto;
 }
@@ -295,16 +334,6 @@ header h2 span {
 #resume table td{
     width: 200px;
     vertical-align: top;
-}
-h4 {
-    font: bold 175% Arial;
-    padding: 2.5%;
-    float: left;
-}
-h5 {
-    font: bold 125% Arial;
-    color: #061f47;
-    padding: 0 40px;
 }
 #resume hr {
     border: 2px solid #072a62;
@@ -358,7 +387,6 @@ h5 {
 
 /*Contact*/
 #contact {
-/*    min-width: 960px;*/
     background: #0D0D0D url(../img/contact-bg.jpg) no-repeat top center;
     box-shadow: 0 2px 5px 5px rgba(0,0,0,.7);
     margin: 10px 0 0 0;
@@ -369,7 +397,8 @@ h5 {
 }
 #loadBar {
     display: none;
-    width: 500px;
+    max-width: 500px;
+    width: 90%;
     height: 70px;
     position: absolute;
     top: 0;
@@ -455,7 +484,6 @@ h5 {
 /*footer*/
 footer {
     width: 100%;
-/*    min-width: 960px;*/
     background: #3d3d3d;
     padding: 30px 0 0;
 }
@@ -627,16 +655,15 @@ div#skype-name {
         bottom: 10% !important;
     }
     .img-wrap {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
+        display: block !important;
+        width: 80% !important;
+        margin: 10px auto!important;
     }
     .content-item {
         display: block;
-        text-align: center;
     }
-    .content-text {
-        text-align: justify;
+    .portfolio-item-wrap h5 {
+        margin: 0 5.5%;
     }
     .portfolio-item > a {
         height: 200px !important;
